@@ -1,0 +1,12 @@
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\bin\Debug\Game02.exe.config
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\bin\Debug\Game02.exe
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\bin\Debug\Game02.pdb
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\bin\Debug\Guna.UI2.dll
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.csproj.AssemblyReference.cache
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.Form1.resources
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.Properties.Resources.resources
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.csproj.GenerateResource.cache
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.csproj.CopyComplete
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.exe
+C:\Users\Dell\OneDrive\Documents\Game02\Game02\obj\Debug\Game02.pdb
