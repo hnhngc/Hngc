@@ -1,0 +1,17 @@
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\bin\Debug\admin & tke.exe.config
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\bin\Debug\admin & tke.exe
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\bin\Debug\admin & tke.pdb
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\bin\Debug\Guna.UI2.dll
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.csproj.AssemblyReference.cache
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form1.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Properties.Resources.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.csproj.GenerateResource.cache
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.csproj.CoreCompileInputs.cache
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.csproj.CopyComplete
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.exe
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin & tke.pdb
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form2.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form3.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form4.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form5.resources
+C:\Users\Dell\OneDrive\Documents\admin & tke\admin & tke\obj\Debug\admin___tke.Form6.resources
