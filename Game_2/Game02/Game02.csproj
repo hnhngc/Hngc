@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Game02</RootNamespace>
+    <AssemblyName>Game02</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl_c.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl_c.Designer.cs">
+      <DependentUpon>lvl_c.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl_d.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl_d.Designer.cs">
+      <DependentUpon>lvl_d.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl_e.Designer.cs">
+      <DependentUpon>lvl_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CharSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSelect.Designer.cs">
+      <DependentUpon>CharSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.cs">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win.Designer.cs">
+      <DependentUpon>Win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl_a.Designer.cs">
+      <DependentUpon>lvl_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl_b.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl_b.Designer.cs">
+      <DependentUpon>lvl_b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl_c.resx">
+      <DependentUpon>lvl_c.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl_d.resx">
+      <DependentUpon>lvl_d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl_e.resx">
+      <DependentUpon>lvl_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSelect.resx">
+      <DependentUpon>CharSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support.resx">
+      <DependentUpon>Support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win.resx">
+      <DependentUpon>Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl_a.resx">
+      <DependentUpon>lvl_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl_b.resx">
+      <DependentUpon>lvl_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START GAME.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START GAME %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1254.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đi cảnh 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1254 78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đi cảnh 1.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đi cảnh 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1254 90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1254 80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapedit_1706523866543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Faceset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Faceset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_a.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2_d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_pixel-art-sign-with-arrow-pointing-to-the-right_33207078.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapedit_1707830301160.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapedit_1707830270323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grass_Sample.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
