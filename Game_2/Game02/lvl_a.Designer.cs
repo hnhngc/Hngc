@@ -64,6 +64,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "block";
             // 
             // pictureBox2
             // 
@@ -75,6 +76,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "block";
             // 
             // pictureBox3
             // 
@@ -86,6 +88,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "block";
             // 
             // pictureBox4
             // 
@@ -97,6 +100,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "block";
             // 
             // pictureBox5
             // 
@@ -108,6 +112,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "block";
             // 
             // pictureBox6
             // 
@@ -119,6 +124,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "block";
             // 
             // pictureBox7
             // 
@@ -130,6 +136,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 9;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "block";
             // 
             // pictureBox10
             // 
@@ -141,6 +148,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 12;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "block";
             // 
             // picPlayer
             // 
@@ -162,7 +170,7 @@
             // 
             this.a1.BackColor = System.Drawing.Color.Transparent;
             this.a1.Image = global::Game02.Properties.Resources.snapedit_1707830270323;
-            this.a1.Location = new System.Drawing.Point(750, 132);
+            this.a1.Location = new System.Drawing.Point(740, 132);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(48, 40);
             this.a1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -173,7 +181,7 @@
             // 
             this.a2.BackColor = System.Drawing.Color.Transparent;
             this.a2.Image = global::Game02.Properties.Resources.snapedit_1707830301160;
-            this.a2.Location = new System.Drawing.Point(412, 12);
+            this.a2.Location = new System.Drawing.Point(427, 12);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(48, 40);
             this.a2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +197,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.a2);
-            this.Controls.Add(this.a1);
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox7);
@@ -199,12 +206,14 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.a1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "lvl_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   ";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.lvl_a_FormClosed);
             this.Load += new System.EventHandler(this.lvl_a_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

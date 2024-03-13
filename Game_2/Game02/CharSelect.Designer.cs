@@ -85,7 +85,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.SandyBrown;
             this.guna2Button1.Location = new System.Drawing.Point(314, 309);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(164, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(174, 45);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "START";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);

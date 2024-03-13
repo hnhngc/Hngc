@@ -35,11 +35,9 @@ namespace Game02
             }
         }
         bool right, left, up, down;
-
-       
-
         void playerMove()
         {
+            
             if (right==true) 
             {
                 if (picPlayer.Left < 500)
@@ -69,6 +67,10 @@ namespace Game02
                 }
             }
         }
+
+        private void lvl_a_FormClosed(object sender, FormClosedEventArgs e)
+        {}
+
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
             if (SelectChar == 1)
@@ -133,11 +135,16 @@ namespace Game02
                 case Keys.Down:
                     down = false;
                     break;
+                case Keys.Escape:
+                    Pause pG = new Pause();
+                    pG.Show();
+                    this.Hide();
+                    break;
             }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 lvl_d leftscreen = new lvl_d(SelectChar);
-               
+                leftscreen.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
                 this.Hide();
                 timer1.Stop();
                 leftscreen.Show();
@@ -145,19 +152,29 @@ namespace Game02
             else if (a2.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 lvl_b upscreen = new lvl_b(SelectChar);
+                upscreen.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
                 this.Hide();
                 timer1.Stop();
                 upscreen.Show();
             }
-            
 
-            
+
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            playerMove();
 
+            playerMove();
+            bool allowMovement = true;
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    
+                }
+                
+            }
             
+
 
 
         }

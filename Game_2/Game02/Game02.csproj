@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bullet.cs" />
+    <Compile Include="Cave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cave.Designer.cs">
+      <DependentUpon>Cave.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,13 @@
     <Compile Include="CharSelect.Designer.cs">
       <DependentUpon>CharSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scoreboard.Designer.cs">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoundManager.cs" />
     <Compile Include="Support.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +140,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cave.resx">
+      <DependentUpon>Cave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CharSelect.resx">
       <DependentUpon>CharSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scoreboard.resx">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Support.resx">
       <DependentUpon>Support.cs</DependentUpon>
@@ -342,6 +361,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Grass_Sample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enFont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tuto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuriken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mten xuong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mũi tên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tuto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basicdialog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basicdl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

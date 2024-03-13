@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Game02
@@ -13,28 +6,27 @@ namespace Game02
     public partial class CharSelect : Form
     {
         int SelectChar = 0;
+
         public CharSelect()
         {
             InitializeComponent();
         }
-        
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            lvl_a start = new lvl_a(SelectChar);
+            lvl_a lvla = new lvl_a(SelectChar);
+            lvla.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
             this.Hide();
-            start.Show();
+            lvla.Show();
+            
         }
+
         public void CharChanged()
         {
-            if(SelectChar == 1)
+            if (!IsDisposed)
             {
-                picP1.BorderStyle = BorderStyle.Fixed3D;
-                picP2.BorderStyle = BorderStyle.None;
-            }
-            else if (SelectChar == 2)
-            {
-                picP1.BorderStyle = BorderStyle.None;
-                picP2.BorderStyle = BorderStyle.Fixed3D;
+                picP1.BorderStyle = (SelectChar == 1) ? BorderStyle.Fixed3D : BorderStyle.None;
+                picP2.BorderStyle = (SelectChar == 2) ? BorderStyle.Fixed3D : BorderStyle.None;
             }
         }
 

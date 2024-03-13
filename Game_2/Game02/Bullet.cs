@@ -10,7 +10,7 @@ namespace Game02
 {
     class Bullet
     {
-        private string direction;
+        public string direction;
         public int bulletLeft;
         public int bulletTop;
 
@@ -36,7 +36,30 @@ namespace Game02
 
         private void BulletTimerEvent(object sender, EventArgs e)
         {
-
+            if(direction == "left")
+            {
+                bullet.Left -= speed;
+            }
+            if (direction == "right")
+            {
+                bullet.Left += speed;
+            }
+            if (direction == "up")
+            {
+                bullet.Top -= speed;
+            }
+            if (direction == "down")
+            {
+                bullet.Top += speed;
+            }
+            if(bullet.Left<10 || bullet.Left > 760 || bullet.Top<10 || bullet.Top > 400)
+            {
+                bulletTimer.Stop();
+                bulletTimer.Dispose();
+                bullet.Dispose();
+                bulletTimer = null;
+                bullet = null;
+            }
         }
     }
 }

@@ -18,9 +18,19 @@ namespace Game02
             
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Support support = new Support();
+            support.ShowDialog();
+            this.Close();
         }
     }
 }

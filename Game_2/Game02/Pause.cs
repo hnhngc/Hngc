@@ -12,9 +12,9 @@ namespace Game02
 {
     public partial class Pause : Form
     {
-        public Pause()
+        private void btnE_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            this.Close();
         }
     }
 }

@@ -16,5 +16,23 @@ namespace Game02
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CharSelect charSelect = new CharSelect();
+            charSelect.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.ShowDialog();
+            mainMenu.StartPosition = FormStartPosition.CenterParent;
+            mainMenu.BringToFront();
+            this.Close();
+        }
     }
 }
