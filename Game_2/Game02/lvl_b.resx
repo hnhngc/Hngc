@@ -192,28 +192,28 @@
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="picWood.Location" type="System.Drawing.Point, System.Drawing">
     <value>657, 291</value>
   </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="picWood.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 50</value>
   </data>
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="picWood.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="picWood.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="&gt;&gt;picWood.Name" xml:space="preserve">
+    <value>picWood</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;picWood.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;picWood.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;picWood.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -340,13 +340,13 @@
     <value>True</value>
   </data>
   <data name="txtAmmo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>NinjaAdventure, 12pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="txtAmmo.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 12</value>
   </data>
   <data name="txtAmmo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 32</value>
+    <value>0, 29</value>
   </data>
   <data name="txtAmmo.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -367,7 +367,7 @@
     <value>True</value>
   </data>
   <data name="txtScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>NinjaAdventure, 12pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="txtScore.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -376,7 +376,7 @@
     <value>318, 12</value>
   </data>
   <data name="txtScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 32</value>
+    <value>0, 29</value>
   </data>
   <data name="txtScore.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>

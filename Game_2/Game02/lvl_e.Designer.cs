@@ -60,6 +60,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "block";
             // 
             // pictureBox1
             // 
@@ -71,6 +72,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "block";
             // 
             // pictureBox2
             // 
@@ -82,6 +84,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 36;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "block";
             // 
             // picBoat
             // 
@@ -108,24 +111,24 @@
             // 
             this.txtScore.AutoSize = true;
             this.txtScore.BackColor = System.Drawing.Color.Transparent;
-            this.txtScore.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtScore.ForeColor = System.Drawing.Color.White;
             this.txtScore.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtScore.Location = new System.Drawing.Point(202, 9);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(0, 32);
+            this.txtScore.Size = new System.Drawing.Size(0, 29);
             this.txtScore.TabIndex = 40;
             // 
             // txtAmmo
             // 
             this.txtAmmo.AutoSize = true;
             this.txtAmmo.BackColor = System.Drawing.Color.Transparent;
-            this.txtAmmo.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtAmmo.ForeColor = System.Drawing.Color.White;
             this.txtAmmo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtAmmo.Location = new System.Drawing.Point(34, 9);
             this.txtAmmo.Name = "txtAmmo";
-            this.txtAmmo.Size = new System.Drawing.Size(0, 32);
+            this.txtAmmo.Size = new System.Drawing.Size(0, 29);
             this.txtAmmo.TabIndex = 39;
             // 
             // HPbar
@@ -159,7 +162,6 @@
             this.Name = "lvl_e";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form12";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.lvl_e_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

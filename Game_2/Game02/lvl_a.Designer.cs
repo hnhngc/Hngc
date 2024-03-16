@@ -212,8 +212,6 @@
             this.Name = "lvl_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   ";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.lvl_a_FormClosed);
             this.Load += new System.EventHandler(this.lvl_a_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

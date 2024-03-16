@@ -135,41 +135,56 @@ namespace Game02
                 case Keys.Down:
                     down = false;
                     break;
-                case Keys.Escape:
-                    Pause pG = new Pause();
-                    pG.Show();
-                    this.Hide();
-                    break;
+                
             }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_d leftscreen = new lvl_d(SelectChar);
-                leftscreen.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
+                lvl_d ls = new lvl_d(SelectChar);
                 this.Hide();
                 timer1.Stop();
-                leftscreen.Show();
+                ls.ShowDialog();
+                this.Close();
             }
             else if (a2.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_b upscreen = new lvl_b(SelectChar);
-                upscreen.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
+                lvl_b us = new lvl_b(SelectChar);
                 this.Hide();
                 timer1.Stop();
-                upscreen.Show();
+                us.ShowDialog();
+                this.Close();
             }
-
-
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
 
             playerMove();
-            bool allowMovement = true;
+            
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "block")
                 {
-                    
+                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (right)
+                        {
+                            // Move player back to avoid collision
+                            picPlayer.Left -= 10;
+                        }
+                        else if (left)
+                        {
+                            picPlayer.Left += 10;
+                        }
+                        if (up)
+                        {
+                            picPlayer.Top += 10;
+                        }
+                        else if (down)
+                        {
+                            picPlayer.Top -= 10;
+                        }
+                    }
                 }
                 
             }

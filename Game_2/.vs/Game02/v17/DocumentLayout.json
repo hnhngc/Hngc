@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Hngc\\Game_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|D:\\Hngc\\Game_2\\game02\\cave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\cave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\cave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\cave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_e.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_b.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_b.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|d:\\hngc\\game_2\\game02\\lvl_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C0F478F-7FCA-4E3C-9D01-7A38B3A9EE05}|Game02\\Game02.csproj|solutionrelative:game02\\lvl_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cave.cs [Design]",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\Cave.cs",
+              "RelativeDocumentMoniker": "Game02\\Cave.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\Cave.cs [Design]",
+              "RelativeToolTip": "Game02\\Cave.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:25:21.403Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "lvl_e.cs [Design]",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_e.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_e.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_e.cs [Design]",
+              "RelativeToolTip": "Game02\\lvl_e.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:24:57.73Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lvl_e.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_e.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_e.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_e.cs",
+              "RelativeToolTip": "Game02\\lvl_e.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAswMYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:22:13.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lvl_d.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_d.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_d.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_d.cs",
+              "RelativeToolTip": "Game02\\lvl_d.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAswMIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:21:59.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lvl_c.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_c.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_c.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_c.cs",
+              "RelativeToolTip": "Game02\\lvl_c.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAcwP0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:21:49.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "lvl_b.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_b.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_b.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_b.cs",
+              "RelativeToolTip": "Game02\\lvl_b.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAswNsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T14:21:29.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "lvl_a.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\lvl_a.cs",
+              "RelativeDocumentMoniker": "Game02\\lvl_a.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\lvl_a.cs",
+              "RelativeToolTip": "Game02\\lvl_a.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAqwLEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T13:43:32.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cave.cs",
+              "DocumentMoniker": "D:\\Hngc\\Game_2\\Game02\\Cave.cs",
+              "RelativeDocumentMoniker": "Game02\\Cave.cs",
+              "ToolTip": "D:\\Hngc\\Game_2\\Game02\\Cave.cs",
+              "RelativeToolTip": "Game02\\Cave.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAswJoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T15:03:31.295Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

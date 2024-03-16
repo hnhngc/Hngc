@@ -28,7 +28,6 @@ namespace Game02
             InitializeComponent();
             SelectChar = choice;
             scoreFromPreviousLevel = score;
-            
             RestartGame();
         }
 
@@ -174,7 +173,30 @@ namespace Game02
                         ammo += 5;
                     }
                 }
-
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (right)
+                        {
+                            // Move player back to avoid collision
+                            picPlayer.Left -= 10;
+                        }
+                        else if (left)
+                        {
+                            picPlayer.Left += 10;
+                        }
+                        if (up)
+                        {
+                            picPlayer.Top += 10;
+                        }
+                        else if (down)
+                        {
+                            picPlayer.Top -= 10;
+                        }
+                    }
+                }
                 if (x is PictureBox && (string)x.Tag == "en")
                 {
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))

@@ -35,7 +35,7 @@
             this.HPbar = new System.Windows.Forms.ProgressBar();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.dialogBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.picHam = new System.Windows.Forms.PictureBox();
             this.downArrow = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -70,7 +70,7 @@
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dialogBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.downArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,24 +114,24 @@
             // 
             this.txtScore.AutoSize = true;
             this.txtScore.BackColor = System.Drawing.Color.Transparent;
-            this.txtScore.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtScore.ForeColor = System.Drawing.Color.White;
             this.txtScore.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtScore.Location = new System.Drawing.Point(194, 12);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(0, 32);
+            this.txtScore.Size = new System.Drawing.Size(0, 29);
             this.txtScore.TabIndex = 34;
             // 
             // txtAmmo
             // 
             this.txtAmmo.AutoSize = true;
             this.txtAmmo.BackColor = System.Drawing.Color.Transparent;
-            this.txtAmmo.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtAmmo.ForeColor = System.Drawing.Color.White;
             this.txtAmmo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtAmmo.Location = new System.Drawing.Point(26, 12);
             this.txtAmmo.Name = "txtAmmo";
-            this.txtAmmo.Size = new System.Drawing.Size(0, 32);
+            this.txtAmmo.Size = new System.Drawing.Size(0, 29);
             this.txtAmmo.TabIndex = 33;
             // 
             // HPbar
@@ -168,17 +168,17 @@
             this.dialogBox1.TabStop = false;
             this.dialogBox1.Visible = false;
             // 
-            // pictureBox23
+            // picHam
             // 
-            this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox23.Image = global::Game02.Properties.Resources.hammer;
-            this.pictureBox23.Location = new System.Drawing.Point(139, 163);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(36, 34);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 31;
-            this.pictureBox23.TabStop = false;
-            this.pictureBox23.Tag = "tools";
+            this.picHam.BackColor = System.Drawing.Color.Transparent;
+            this.picHam.Image = global::Game02.Properties.Resources.hammer;
+            this.picHam.Location = new System.Drawing.Point(139, 163);
+            this.picHam.Name = "picHam";
+            this.picHam.Size = new System.Drawing.Size(36, 34);
+            this.picHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHam.TabIndex = 31;
+            this.picHam.TabStop = false;
+            this.picHam.Tag = "tools";
             // 
             // downArrow
             // 
@@ -211,6 +211,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "block";
             // 
             // pictureBox21
             // 
@@ -222,6 +223,7 @@
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 28;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Tag = "block";
             // 
             // pictureBox20
             // 
@@ -233,6 +235,7 @@
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 27;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Tag = "block";
             // 
             // pictureBox19
             // 
@@ -244,6 +247,7 @@
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 26;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "block";
             // 
             // pictureBox8
             // 
@@ -255,6 +259,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "block";
             // 
             // pictureBox18
             // 
@@ -266,6 +271,7 @@
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 25;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Tag = "block";
             // 
             // pictureBox2
             // 
@@ -277,6 +283,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "block";
             // 
             // pictureBox17
             // 
@@ -288,6 +295,7 @@
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 23;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "block";
             // 
             // pictureBox16
             // 
@@ -299,6 +307,7 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 22;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "block";
             // 
             // pictureBox22
             // 
@@ -310,6 +319,7 @@
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 21;
             this.pictureBox22.TabStop = false;
+            this.pictureBox22.Tag = "block";
             // 
             // pictureBox15
             // 
@@ -321,6 +331,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 14;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "block";
             // 
             // pictureBox14
             // 
@@ -332,6 +343,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 13;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Tag = "block";
             // 
             // pictureBox13
             // 
@@ -343,6 +355,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "block";
             // 
             // pictureBox12
             // 
@@ -354,6 +367,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 11;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "block";
             // 
             // pictureBox11
             // 
@@ -365,6 +379,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 10;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "block";
             // 
             // pictureBox10
             // 
@@ -376,6 +391,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "block";
             // 
             // pictureBox9
             // 
@@ -387,6 +403,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "block";
             // 
             // pictureBox7
             // 
@@ -398,6 +415,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "block";
             // 
             // pictureBox6
             // 
@@ -409,6 +427,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "block";
             // 
             // pictureBox5
             // 
@@ -420,6 +439,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "block";
             // 
             // pictureBox4
             // 
@@ -431,6 +451,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "block";
             // 
             // pictureBox3
             // 
@@ -442,6 +463,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "block";
             // 
             // pictureBox25
             // 
@@ -558,7 +580,7 @@
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.txtAmmo);
             this.Controls.Add(this.dialogBox1);
-            this.Controls.Add(this.pictureBox23);
+            this.Controls.Add(this.picHam);
             this.Controls.Add(this.downArrow);
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.pictureBox1);
@@ -592,7 +614,7 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dialogBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.downArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -656,7 +678,7 @@
         private System.Windows.Forms.PictureBox picPlayer;
         private System.Windows.Forms.Timer GameTimer;
         private System.Windows.Forms.PictureBox downArrow;
-        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox picHam;
         private System.Windows.Forms.PictureBox dialogBox1;
         private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Label txtAmmo;

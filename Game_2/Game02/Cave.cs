@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Game02
@@ -19,12 +12,14 @@ namespace Game02
         Char p1 = new Char();
         bool right, left, up, down, gameOver;
         private int scoreFromPreviousLevel;
+
         public Cave(int score, int choice)
         {
             InitializeComponent();
             SelectChar = choice;
             scoreFromPreviousLevel = score;
         }
+
         private void Cave_Load(object sender, EventArgs e)
         {
             if (SelectChar == 1)
@@ -38,85 +33,42 @@ namespace Game02
                 picPlayer.Image = Properties.Resources.p2_a;
             }
         }
-        void playerMove()
-        {
 
-            if (right == true)
-            {
-                if (picPlayer.Left < 500)
-                {
-                    picPlayer.Left += 10;
-                }
-            }
-            if (left == true)
-            {
-                if (picPlayer.Left > 20)
-                {
-                    picPlayer.Left -= 10;
-                }
-            }
-            if (up == true)
-            {
-                if (picPlayer.Top > 20)
-                {
-                    picPlayer.Top -= 10;
-                }
-            }
-            if (down == true)
-            {
-                if (picPlayer.Top < 260)
-                {
-                    picPlayer.Top += 10;
-                }
-            }
-        }
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
-            if (SelectChar == 1)
+            switch (e.KeyCode)
             {
-                switch (e.KeyCode)
-                {
-                    case Keys.Right:
-                        right = true;
+                case Keys.Right:
+                    right = true;
+                    if (SelectChar == 1)
                         picPlayer.Image = Properties.Resources.p1_D;
-                        break;
-                    case Keys.Left:
-                        left = true;
-                        picPlayer.Image = Properties.Resources.p1_c;
-                        break;
-                    case Keys.Up:
-                        up = true;
-                        picPlayer.Image = Properties.Resources.p1_b;
-                        break;
-                    case Keys.Down:
-                        down = true;
-                        picPlayer.Image = Properties.Resources.p1_a;
-                        break;
-                }
-            }
-            else if (SelectChar == 2)
-            {
-                switch (e.KeyCode)
-                {
-                    case Keys.Right:
-                        right = true;
+                    else if (SelectChar == 2)
                         picPlayer.Image = Properties.Resources.p2_d;
-                        break;
-                    case Keys.Left:
-                        left = true;
+                    break;
+                case Keys.Left:
+                    left = true;
+                    if (SelectChar == 1)
+                        picPlayer.Image = Properties.Resources.p1_c;
+                    else if (SelectChar == 2)
                         picPlayer.Image = Properties.Resources.p2_c;
-                        break;
-                    case Keys.Up:
-                        up = true;
+                    break;
+                case Keys.Up:
+                    up = true;
+                    if (SelectChar == 1)
+                        picPlayer.Image = Properties.Resources.p1_b;
+                    else if (SelectChar == 2)
                         picPlayer.Image = Properties.Resources.p2_b;
-                        break;
-                    case Keys.Down:
-                        down = true;
+                    break;
+                case Keys.Down:
+                    down = true;
+                    if (SelectChar == 1)
+                        picPlayer.Image = Properties.Resources.p1_a;
+                    else if (SelectChar == 2)
                         picPlayer.Image = Properties.Resources.p2_a;
-                        break;
-                }
+                    break;
             }
         }
+
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -134,16 +86,32 @@ namespace Game02
                     down = false;
                     break;
             }
+
             if (downArrow.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_c back = new lvl_c(score, SelectChar);
-                back.FormClosed += (s, args) => this.Close();
-                this.Hide();
-                GameTimer.Stop();
-                back.ShowDialog();
-                this.Close();
+                if (!picHam.Visible) // Nếu picHam được lấy
+                {
+                    lvl_c back = new lvl_c(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    this.Hide();
+                    GameTimer.Stop();
+                    back.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    dialogBox1.Visible = true;
+                    Timer dialogTimer = new Timer();
+                    dialogTimer.Interval = 2000; // 2000 milliseconds = 2 seconds
+                    dialogTimer.Tick += (s, args) =>
+                    {
+                        dialogTimer.Stop();
+                        dialogBox1.Visible = false;
+                    };
+                    dialogTimer.Start();
+                }
             }
         }
+
         private void GameTimer_Tick(object sender, EventArgs e)
         {
             if (playerHealth > 1)
@@ -173,14 +141,61 @@ namespace Game02
                         score += 5;
                     }
                 }
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (right)
+                        {
+                            // Move player back to avoid collision
+                            picPlayer.Left -= 10;
+                        }
+                        else if (left)
+                        {
+                            picPlayer.Left += 10;
+                        }
+                        if (up)
+                        {
+                            picPlayer.Top += 10;
+                        }
+                        else if (down)
+                        {
+                            picPlayer.Top -= 10;
+                        }
+                    }
+                }
                 if (x is PictureBox && (string)x.Tag == "tools")
                 {
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
-                        
+                        picHam.Visible = false;
                     }
                 }
             }
+        }
+
+        void playerMove()
+        {
+            if (right == true && picPlayer.Left < 500)
+                picPlayer.Left += 10;
+            if (left == true && picPlayer.Left > 20)
+                picPlayer.Left -= 10;
+            if (up == true && picPlayer.Top > 20)
+                picPlayer.Top -= 10;
+            if (down == true && picPlayer.Top < 260)
+                picPlayer.Top += 10;
+        }
+
+        public void RestartGame()
+        {
+            up = false;
+            down = false;
+            left = false;
+            right = false;
+            playerHealth = 100;
+            score = 0;
+            GameTimer.Start();
         }
     }
 }

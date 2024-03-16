@@ -164,17 +164,14 @@ namespace Game02
                     DropAmmo();
                 }
             }
-            if (e.KeyCode == Keys.Enter && gameOver == true)
-            {
-                RestartGame();
-            }
+
             if (nextLV.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 lvl_c newlv = new lvl_c(score, SelectChar);
-                newlv.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
                 this.Hide();
                 timer1.Stop();
-                newlv.Show();
+                newlv.ShowDialog();
+                this.Close();
             }
 
         }
@@ -207,8 +204,32 @@ namespace Game02
                         ammo += 5;
                     }
                 }
-                
-                if(x is PictureBox &&(string)x.Tag == "en")
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (right)
+                        {
+                            // Move player back to avoid collision
+                            picPlayer.Left -= 10;
+                        }
+                        else if (left)
+                        {
+                            picPlayer.Left += 10;
+                        }
+                        if (up)
+                        {
+                            picPlayer.Top += 10;
+                        }
+                        else if (down)
+                        {
+                            picPlayer.Top -= 10;
+                        }
+                    }
+                }
+
+                if (x is PictureBox &&(string)x.Tag == "en")
                 {
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {

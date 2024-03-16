@@ -32,14 +32,14 @@ namespace Game02
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 SoundManager.Play(@"C:\Users\Dell\Downloads\27-Chill.wav");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
 
         private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)

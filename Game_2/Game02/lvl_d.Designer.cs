@@ -131,24 +131,24 @@
             // 
             this.txtScore.AutoSize = true;
             this.txtScore.BackColor = System.Drawing.Color.Transparent;
-            this.txtScore.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtScore.ForeColor = System.Drawing.Color.White;
             this.txtScore.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtScore.Location = new System.Drawing.Point(220, 9);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(0, 32);
+            this.txtScore.Size = new System.Drawing.Size(0, 29);
             this.txtScore.TabIndex = 44;
             // 
             // txtAmmo
             // 
             this.txtAmmo.AutoSize = true;
             this.txtAmmo.BackColor = System.Drawing.Color.Transparent;
-            this.txtAmmo.Font = new System.Drawing.Font("NinjaAdventure", 12F, System.Drawing.FontStyle.Bold);
+            this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtAmmo.ForeColor = System.Drawing.Color.White;
             this.txtAmmo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtAmmo.Location = new System.Drawing.Point(52, 9);
             this.txtAmmo.Name = "txtAmmo";
-            this.txtAmmo.Size = new System.Drawing.Size(0, 32);
+            this.txtAmmo.Size = new System.Drawing.Size(0, 29);
             this.txtAmmo.TabIndex = 43;
             // 
             // lvl_d
@@ -173,7 +173,6 @@
             this.Name = "lvl_d";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form11";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.lvl_d_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);

@@ -23,6 +23,7 @@ namespace Game02
         List<PictureBox> enList = new List<PictureBox>();
         Char player;
         Char p1 = new Char();
+        private int scoreFromPreviousLevel;
         public lvl_d(int choice)
         {
             InitializeComponent();
@@ -131,7 +132,7 @@ namespace Game02
             }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_e newlv = new lvl_e(score, SelectChar);
+                lvl_e newlv = new lvl_e(SelectChar,score + scoreFromPreviousLevel);
                 this.Hide();
                 GameTimer.Stop();
                 newlv.Show();
@@ -166,6 +167,30 @@ namespace Game02
                         this.Controls.Remove(x);
                         ((PictureBox)x).Dispose();
                         ammo += 5;
+                    }
+                }
+                if (x is PictureBox && (string)x.Tag == "block")
+                {
+                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        if (right)
+                        {
+                            // Move player back to avoid collision
+                            picPlayer.Left -= 10;
+                        }
+                        else if (left)
+                        {
+                            picPlayer.Left += 10;
+                        }
+                        if (up)
+                        {
+                            picPlayer.Top += 10;
+                        }
+                        else if (down)
+                        {
+                            picPlayer.Top -= 10;
+                        }
                     }
                 }
 
@@ -296,7 +321,7 @@ namespace Game02
                 this.Controls.Remove(i);
             }
             enList.Clear();
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 10; i++)
             {
                 SpawnEnemy();
             }
