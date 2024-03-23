@@ -42,6 +42,12 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.picPlayer = new System.Windows.Forms.PictureBox();
             this.picFinal = new System.Windows.Forms.PictureBox();
+            this.cave_2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.dialogbox = new System.Windows.Forms.PictureBox();
+            this.picDown = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,6 +56,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cave_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dialogbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDown)).BeginInit();
             this.SuspendLayout();
             // 
             // picCave
@@ -142,10 +154,62 @@
             // picFinal
             // 
             this.picFinal.BackColor = System.Drawing.Color.Transparent;
-            this.picFinal.Image = global::Game02.Properties.Resources.snapedit_1707830270323;
+            this.picFinal.Image = global::Game02.Properties.Resources.rd;
             resources.ApplyResources(this.picFinal, "picFinal");
             this.picFinal.Name = "picFinal";
             this.picFinal.TabStop = false;
+            // 
+            // cave_2
+            // 
+            this.cave_2.BackColor = System.Drawing.Color.Transparent;
+            this.cave_2.Image = global::Game02.Properties.Resources.cv;
+            resources.ApplyResources(this.cave_2, "cave_2");
+            this.cave_2.Name = "cave_2";
+            this.cave_2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Game02.Properties.Resources._1254;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "block";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = global::Game02.Properties.Resources._1254;
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "block";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Image = global::Game02.Properties.Resources._1254;
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "block";
+            // 
+            // dialogbox
+            // 
+            this.dialogbox.BackColor = System.Drawing.Color.Transparent;
+            this.dialogbox.Image = global::Game02.Properties.Resources.Group_18;
+            resources.ApplyResources(this.dialogbox, "dialogbox");
+            this.dialogbox.Name = "dialogbox";
+            this.dialogbox.TabStop = false;
+            this.dialogbox.Tag = "block";
+            // 
+            // picDown
+            // 
+            this.picDown.BackColor = System.Drawing.Color.Transparent;
+            this.picDown.Image = global::Game02.Properties.Resources.d;
+            resources.ApplyResources(this.picDown, "picDown");
+            this.picDown.Name = "picDown";
+            this.picDown.TabStop = false;
             // 
             // lvl_c
             // 
@@ -153,6 +217,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Game02.Properties.Resources.Grass_Sample;
+            this.Controls.Add(this.picDown);
+            this.Controls.Add(this.dialogbox);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.picFinal);
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.pictureBox5);
@@ -164,6 +232,8 @@
             this.Controls.Add(this.HPbar);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.txtAmmo);
+            this.Controls.Add(this.cave_2);
+            this.Controls.Add(this.pictureBox6);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "lvl_c";
@@ -178,6 +248,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cave_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dialogbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +272,11 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox picPlayer;
         private System.Windows.Forms.PictureBox picFinal;
+        private System.Windows.Forms.PictureBox cave_2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox dialogbox;
+        private System.Windows.Forms.PictureBox picDown;
     }
 }

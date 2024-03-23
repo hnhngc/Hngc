@@ -169,10 +169,10 @@
             // a1
             // 
             this.a1.BackColor = System.Drawing.Color.Transparent;
-            this.a1.Image = global::Game02.Properties.Resources.snapedit_1707830270323;
+            this.a1.Image = global::Game02.Properties.Resources.r;
             this.a1.Location = new System.Drawing.Point(740, 132);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(48, 40);
+            this.a1.Size = new System.Drawing.Size(33, 33);
             this.a1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.a1.TabIndex = 14;
             this.a1.TabStop = false;
@@ -180,10 +180,10 @@
             // a2
             // 
             this.a2.BackColor = System.Drawing.Color.Transparent;
-            this.a2.Image = global::Game02.Properties.Resources.snapedit_1707830301160;
+            this.a2.Image = global::Game02.Properties.Resources.u;
             this.a2.Location = new System.Drawing.Point(427, 12);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(48, 40);
+            this.a2.Size = new System.Drawing.Size(33, 33);
             this.a2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.a2.TabIndex = 15;
             this.a2.TabStop = false;
@@ -196,7 +196,6 @@
             this.BackgroundImage = global::Game02.Properties.Resources.START_GAME__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.a2);
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox7);
@@ -206,6 +205,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.a2);
             this.Controls.Add(this.a1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

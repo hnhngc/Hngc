@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using static Game02.Pause;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Game02
 {
@@ -19,9 +20,10 @@ namespace Game02
         Random random = new Random();
         int score;
         List<PictureBox> enList = new List<PictureBox>();
-        Char player;
         Char p1 = new Char();
         private int scoreFromPreviousLevel;
+        private int countdownSeconds = 100;
+        private bool isItemUnlocked = false;
 
         public lvl_e(int score, int choice)
         {
@@ -29,20 +31,21 @@ namespace Game02
             SelectChar = choice;
             scoreFromPreviousLevel = score;
             RestartGame();
+            InitializeCountdownTimer();
+
         }
 
         private void lvl_e_Load(object sender, EventArgs e)
         {
             if (SelectChar == 1)
             {
-                player = p1;
                 picPlayer.Image = Properties.Resources.p1_a;
             }
             else if (SelectChar == 2)
             {
-                player = p1;
                 picPlayer.Image = Properties.Resources.p2_a;
             }
+            
         }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
@@ -117,7 +120,7 @@ namespace Game02
                     up = false;
                     break;
                 case Keys.Down:
-                    down = false;
+                    down = false; 
                     break;
                 case Keys.Escape:
                     this.Close();
@@ -132,18 +135,19 @@ namespace Game02
                     DropAmmo();
                 }
             }
-            if (picBoat.Bounds.IntersectsWith(picPlayer.Bounds))
+            UnlockItem();
+            
+            if (picPlayer.Bounds.IntersectsWith(picLeft_Up.Bounds))
             {
-                Win newlv = new Win();
-                newlv.SetScore(score + scoreFromPreviousLevel);
+                lvl_c topleft = new lvl_c(score + scoreFromPreviousLevel, SelectChar);
                 this.Hide();
                 GameTimer.Stop();
-                newlv.Show();
+                topleft.ShowDialog();
                 this.Close();
             }
             
         }
-
+        
         private void GameTimer_Tick(object sender, EventArgs e)
         {
             if (playerHealth > 1)
@@ -242,7 +246,6 @@ namespace Game02
                 }
             }
         }
-
         private void ShootBullet(string direction)
         {
             Bullet shoot = new Bullet();
@@ -251,7 +254,56 @@ namespace Game02
             shoot.bulletTop = picPlayer.Top + (picPlayer.Height / 2);
             shoot.MakeBullet(this);
         }
-        
+        private void InitializeCountdownTimer()
+        {
+            countdownTimer = new Timer();
+            countdownTimer.Interval = 1000; // Cập nhật mỗi giây
+            countdownTimer.Tick += countdownTimer_Tick;
+        }
+        private void countdownTimer_Tick(object sender, EventArgs e)
+        {
+            countdownSeconds-=10; // Giảm số giây còn lại
+            pB_fixing.Value = countdownSeconds; // Cập nhật giá trị cho progress bar
+
+            if (countdownSeconds <= 0)
+            {
+                countdownTimer.Stop(); // Dừng timer khi đếm ngược kết thúc
+                isItemUnlocked = true;
+                UnlockItem(); // Mở khóa đồ vật khi đếm ngược kết thúc
+            }
+
+        }
+        private void UnlockItem()
+        {
+            // Kiểm tra điều kiện để mở khóa đồ vật ở đây
+            if (picPlayer.Bounds.IntersectsWith(picBoat.Bounds))
+            {
+                
+                if (Cave.itemHamTaken && lvl_b.itemWoodTaken && lvl_d.itemScrewTaken)
+                {
+                    
+                    // Mở khóa đồ vật hoặc thực hiện hành động khác ở đây
+                    countdownTimer.Start();
+                    if (countdownSeconds <= 0)
+                    {
+                        countdownTimer.Stop(); // Dừng timer khi đếm ngược kết thúc
+                        isItemUnlocked = true;
+                        Win newlv = new Win();
+                        newlv.SetScore(score + scoreFromPreviousLevel);
+                        this.Hide();
+                        GameTimer.Stop();
+                        newlv.Show();
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Chưa lấy đủ món đồ cần thiết!");
+                }
+            }
+            else { countdownTimer.Stop(); }
+        }
+
         public void playerMove()
         {
             if (right == true)

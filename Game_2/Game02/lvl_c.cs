@@ -96,9 +96,25 @@ namespace Game02
             {
                 GoToNextLevel(new Cave(score+ scoreFromPreviousLevel, SelectChar));
             }
+            if (cave_2.Bounds.IntersectsWith(picPlayer.Bounds))
+            {
+                dialogbox.Visible = true;
+                Timer dialogTimer = new Timer();
+                dialogTimer.Interval = 1500; // 2000 milliseconds = 2 seconds
+                dialogTimer.Tick += (s, args) =>
+                {
+                    dialogTimer.Stop();
+                    dialogbox.Visible = false;
+                };
+                dialogTimer.Start();
+            }
             if (picFinal.Bounds.IntersectsWith(picPlayer.Bounds))
             {
                 GoToNextLevel(new lvl_e(score+ scoreFromPreviousLevel, SelectChar));
+            }
+            if (picDown.Bounds.IntersectsWith(picPlayer.Bounds))
+            {
+                GoToNextLevel(new lvl_b(score + scoreFromPreviousLevel, SelectChar));
             }
         }
 
@@ -263,6 +279,8 @@ namespace Game02
                 }
             }
         }
+
+        
 
         public void SpawnEnemy()
         {

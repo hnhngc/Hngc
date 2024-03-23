@@ -20,10 +20,11 @@ namespace Game02
         public void SetScore(int score)
         {
             this.score = score;
-            lblScore.Text = "Your score: " + score.ToString(); // Giả sử lblScore là tên của Label để hiển thị điểm số
+            lblScore.Text = "Your score: " + score.ToString(); 
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CharSelect charSelect = new CharSelect();
             charSelect.Show();
             this.Close();
@@ -31,8 +32,9 @@ namespace Game02
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainMenu menu = new MainMenu();
-            menu.Show();
+            menu.ShowDialog();
             this.Close();
         }
     }

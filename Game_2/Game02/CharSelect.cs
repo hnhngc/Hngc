@@ -14,10 +14,17 @@ namespace Game02
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            lvl_a lvla = new lvl_a(SelectChar);
-            lvla.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
-            this.Hide();
-            lvla.Show();
+            if (SelectChar != 0)
+            {
+                lvl_a lvla = new lvl_a(SelectChar);
+                lvla.FormClosed += (s, args) => this.Close(); // Đóng form hiện tại sau khi form mới đã đóng
+                this.Hide();
+                lvla.Show();
+            }
+            else
+            {
+                MessageBox.Show("Choose a character to enter game!", "Select Character", MessageBoxButtons.OK); 
+            }
             
         }
 

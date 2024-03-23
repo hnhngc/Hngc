@@ -83,3 +83,6 @@ D:\Hngc\Game_2\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
 D:\Hngc\Game_2\Game02\obj\Debug\Game02.csproj.Up2Date
 D:\Hngc\Game_2\Game02\obj\Debug\Game02.exe
 D:\Hngc\Game_2\Game02\obj\Debug\Game02.pdb
+D:\Hngc\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
+D:\Hngc\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
+D:\Hngc\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache

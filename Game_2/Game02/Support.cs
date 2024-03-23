@@ -24,5 +24,13 @@ namespace Game02
             mainMenu.ShowDialog();
             this.Close();
         }
+
+        private void btnE_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu mn = new MainMenu();
+            mn.ShowDialog();
+            this.Close();
+        }
     }
 }

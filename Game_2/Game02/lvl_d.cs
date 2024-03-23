@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Game02
@@ -20,15 +15,18 @@ namespace Game02
         int enSpeed = 3;
         Random random = new Random();
         int score;
-        List<PictureBox> enList = new List<PictureBox>();
+        List<PictureBox> enemyList = new List<PictureBox>();
         Char player;
         Char p1 = new Char();
         private int scoreFromPreviousLevel;
-        public lvl_d(int choice)
+        public static bool itemScrewTaken = false;
+
+        public lvl_d(int score, int choice)
         {
             InitializeComponent();
             SelectChar = choice;
             RestartGame();
+            scoreFromPreviousLevel = score;
         }
 
         private void lvl_d_Load(object sender, EventArgs e)
@@ -121,7 +119,7 @@ namespace Game02
                     down = false;
                     break;
             }
-            if (e.KeyCode == Keys.Space && ammo > 0 && gameOver == false)
+            if (e.KeyCode == Keys.Space && ammo > 0 && !gameOver)
             {
                 ammo--;
                 ShootBullet(facing);
@@ -130,17 +128,67 @@ namespace Game02
                     DropAmmo();
                 }
             }
+            if (picL_T.Bounds.IntersectsWith(picPlayer.Bounds) )
+            {
+                if (!picScrew.Visible) // Nếu picHam được lấy
+                {
+                    itemScrewTaken = true;
+                    lvl_b back = new lvl_b(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    this.Hide();
+                    GameTimer.Stop();
+                    back.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    dialogBox2.Visible = true;
+                    Timer dialogTimer = new Timer();
+                    dialogTimer.Interval = 1500; // 2000 milliseconds = 2 seconds
+                    dialogTimer.Tick += (s, args) =>
+                    {
+                        dialogTimer.Stop();
+                        dialogBox2.Visible = false;
+                    };
+                    dialogTimer.Start();
+                }
+            }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_e newlv = new lvl_e(SelectChar,score + scoreFromPreviousLevel);
-                this.Hide();
-                GameTimer.Stop();
-                newlv.Show();
-                this.Close();
+                if (!picScrew.Visible) // Nếu picHam được lấy
+                {
+                    itemScrewTaken = true;
+                    lvl_e back = new lvl_e(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    this.Hide();
+                    GameTimer.Stop();
+                    back.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    dialogBox3.Visible = true;
+                    Timer dialogTimer = new Timer();
+                    dialogTimer.Interval = 1500; // 2000 milliseconds = 2 seconds
+                    dialogTimer.Tick += (s, args) =>
+                    {
+                        dialogTimer.Stop();
+                        dialogBox3.Visible = false;
+                    };
+                    dialogTimer.Start();
+                }
             }
+
         }
+        
 
         private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            UpdatePlayerHealth();
+            UpdateUI();
+            playerMove();
+            HandleCollisions();
+        }
+
+        private void UpdatePlayerHealth()
         {
             if (playerHealth > 1)
             {
@@ -155,9 +203,77 @@ namespace Game02
                 go.ShowDialog();
                 this.Close();
             }
+        }
+
+        private void UpdateUI()
+        {
             txtAmmo.Text = "Ammo: " + ammo;
-            txtScore.Text = "Score: " + score;
-            playerMove();
+            txtScore.Text = "Score: " + (score + scoreFromPreviousLevel);
+        }
+
+        private void playerMove()
+        {
+            if (right == true)
+            {
+                if (picPlayer.Left < 500)
+                {
+                    picPlayer.Left += 10;
+                }
+            }
+            if (left == true)
+            {
+                if (picPlayer.Left > 20)
+                {
+                    picPlayer.Left -= 10;
+                }
+            }
+            if (up == true)
+            {
+                if (picPlayer.Top > 20)
+                {
+                    picPlayer.Top -= 10;
+                }
+            }
+            if (down == true)
+            {
+                if (picPlayer.Top < 260)
+                {
+                    picPlayer.Top += 10;
+                }
+            }
+        }
+
+        private void DropAmmo()
+        {
+            PictureBox ammo = new PictureBox();
+            ammo.Image = Properties.Resources.Shuriken;
+            ammo.SizeMode = PictureBoxSizeMode.AutoSize;
+            ammo.BackColor = Color.Transparent;
+            ammo.Left = random.Next(100, this.ClientSize.Width - ammo.Width - 100);
+            ammo.Top = random.Next(50, 210);
+            ammo.Tag = "ammo";
+
+            this.Controls.Add(ammo);
+            ammo.BringToFront();
+            picPlayer.BringToFront();
+        }
+
+        private void SpawnEnemy()
+        {
+            PictureBox enemy = new PictureBox();
+            enemy.Tag = "en";
+            enemy.Image = Properties.Resources.enFont;
+            enemy.Left = random.Next(0, 700);
+            enemy.Top = random.Next(0, 215);
+            enemy.SizeMode = PictureBoxSizeMode.AutoSize;
+            enemy.BackColor = Color.Transparent;
+            enemyList.Add(enemy);
+            this.Controls.Add(enemy);
+            picPlayer.BringToFront();
+        }
+
+        private void HandleCollisions()
+        {
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "ammo")
@@ -169,14 +285,20 @@ namespace Game02
                         ammo += 5;
                     }
                 }
+                if (x is PictureBox && (string)x.Tag == "tools")
+                {
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        picScrew.Visible = false;
+                        itemScrewTaken = true;
+                    }
+                }
                 if (x is PictureBox && (string)x.Tag == "block")
                 {
-                    // Kiểm tra nếu vị trí của người chơi giao nhau với vị trí của PictureBox "block"
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
                         if (right)
                         {
-                            // Move player back to avoid collision
                             picPlayer.Left -= 10;
                         }
                         else if (left)
@@ -221,24 +343,26 @@ namespace Game02
                         ((PictureBox)x).Image = Properties.Resources.enFont;
                     }
                 }
+
                 foreach (Control j in this.Controls)
                 {
                     if (j is PictureBox && (string)j.Tag == "bullet" && x is PictureBox && (string)x.Tag == "en")
                     {
                         if (x.Bounds.IntersectsWith(j.Bounds))
                         {
-                            IncreaseScore(10); // Tăng điểm số khi tiêu diệt một kẻ địch
+                            IncreaseScore(10);
                             this.Controls.Remove(j);
                             ((PictureBox)j).Dispose();
                             this.Controls.Remove(x);
                             ((PictureBox)x).Dispose();
-                            enList.Remove(((PictureBox)x));
+                            enemyList.Remove(((PictureBox)x));
                             SpawnEnemy();
                         }
                     }
                 }
             }
         }
+
         public void IncreaseScore(int points)
         {
             score += points;
@@ -253,75 +377,14 @@ namespace Game02
             shoot.MakeBullet(this);
         }
 
-        public void playerMove()
-        {
-            if (right == true)
-            {
-                if (picPlayer.Left < 500)
-                {
-                    picPlayer.Left += 10;
-                }
-            }
-            if (left == true)
-            {
-                if (picPlayer.Left > 20)
-                {
-                    picPlayer.Left -= 10;
-                }
-            }
-            if (up == true)
-            {
-                if (picPlayer.Top > 20)
-                {
-                    picPlayer.Top -= 10;
-                }
-            }
-            if (down == true)
-            {
-                if (picPlayer.Top < 260)
-                {
-                    picPlayer.Top += 10;
-                }
-            }
-        }
-
-        public void DropAmmo()
-        {
-            PictureBox ammo = new PictureBox();
-            ammo.Image = Properties.Resources.Shuriken;
-            ammo.SizeMode = PictureBoxSizeMode.AutoSize;
-            ammo.BackColor = Color.Transparent;
-            ammo.Left = random.Next(100, this.ClientSize.Width - ammo.Width - 100);
-            ammo.Top = random.Next(50, 210);
-            ammo.Tag = "ammo";
-
-            this.Controls.Add(ammo);
-            ammo.BringToFront();
-            picPlayer.BringToFront();
-        }
-
-        public void SpawnEnemy()
-        {
-            PictureBox en = new PictureBox();
-            en.Tag = "en";
-            en.Image = Properties.Resources.enFont;
-            en.Left = random.Next(0, 700);
-            en.Top = random.Next(0, 215);
-            en.SizeMode = PictureBoxSizeMode.AutoSize;
-            en.BackColor = Color.Transparent;
-            enList.Add(en);
-            this.Controls.Add(en);
-            picPlayer.BringToFront();
-        }
-
         public void RestartGame()
         {
-            foreach (PictureBox i in enList)
+            foreach (PictureBox i in enemyList)
             {
                 this.Controls.Remove(i);
             }
-            enList.Clear();
-            for (int i = 0; i < 10; i++)
+            enemyList.Clear();
+            for (int i = 0; i < 1; i++)
             {
                 SpawnEnemy();
             }
@@ -334,7 +397,8 @@ namespace Game02
             ammo = 10;
             GameTimer.Start();
         }
-
-
     }
 }
+
+
+

@@ -1,34 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Media;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WMPLib;
 
 namespace Game02
 {
     public class SoundManager
     {
-        private static SoundPlayer player;
+        private WindowsMediaPlayer player;
+        private int volume = 50; // Giá trị mặc định cho âm lượng
 
-        // Khởi tạo player và chơi nhạc
-        public static void Play(string filePath)
+        // Khởi tạo player và đặt đường dẫn tệp âm thanh
+        public SoundManager(string filePath)
         {
-            if (player != null)
-            {
-                player.Stop();
-                player.Dispose();
-            }
+            player = new WindowsMediaPlayer();
+            player.URL = filePath;
+        }
 
-            player = new SoundPlayer(filePath);
-            player.PlayLooping(); // Phát nhạc lặp lại
+        // Phát nhạc với chế độ lặp lại
+        public void PlayLoop()
+        {
+            // Đặt chế độ lặp lại
+            player.settings.setMode("loop", true);
+            // Phát nhạc
+            player.controls.play();
         }
 
         // Dừng nhạc
-        public static void Stop()
+        public void Stop()
         {
-            player?.Stop();
+            player.controls.stop();
         }
 
+        // Đặt âm lượng
+        public void SetVolume(int volume)
+        {
+            this.volume = volume;
+            player.settings.volume = volume;
+        }
+
+        // Lấy âm lượng
+        public int GetVolume()
+        {
+            return volume;
+        }
     }
 }

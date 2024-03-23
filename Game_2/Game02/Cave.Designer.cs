@@ -183,10 +183,10 @@
             // downArrow
             // 
             this.downArrow.BackColor = System.Drawing.Color.Transparent;
-            this.downArrow.Image = global::Game02.Properties.Resources.mten_xuong;
+            this.downArrow.Image = global::Game02.Properties.Resources.d;
             this.downArrow.Location = new System.Drawing.Point(331, 379);
             this.downArrow.Name = "downArrow";
-            this.downArrow.Size = new System.Drawing.Size(36, 34);
+            this.downArrow.Size = new System.Drawing.Size(33, 33);
             this.downArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.downArrow.TabIndex = 30;
             this.downArrow.TabStop = false;
@@ -581,7 +581,6 @@
             this.Controls.Add(this.txtAmmo);
             this.Controls.Add(this.dialogBox1);
             this.Controls.Add(this.picHam);
-            this.Controls.Add(this.downArrow);
             this.Controls.Add(this.picPlayer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox21);
@@ -605,6 +604,7 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.downArrow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cave";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

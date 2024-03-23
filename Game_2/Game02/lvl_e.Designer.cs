@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picBoat = new System.Windows.Forms.PictureBox();
@@ -38,29 +37,23 @@
             this.txtScore = new System.Windows.Forms.Label();
             this.txtAmmo = new System.Windows.Forms.Label();
             this.HPbar = new System.Windows.Forms.ProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pB_fixing = new System.Windows.Forms.ProgressBar();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.countdownTimer = new System.Windows.Forms.Timer(this.components);
+            this.picLeft_Up = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLeft_Up)).BeginInit();
             this.SuspendLayout();
             // 
             // GameTimer
             // 
             this.GameTimer.Enabled = true;
             this.GameTimer.Tick += new System.EventHandler(this.GameTimer_Tick);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Game02.Properties.Resources._1254_90;
-            this.pictureBox4.Location = new System.Drawing.Point(27, 161);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 56);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 34;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "block";
             // 
             // pictureBox1
             // 
@@ -141,6 +134,49 @@
             this.HPbar.TabIndex = 41;
             this.HPbar.Value = 100;
             // 
+            // pB_fixing
+            // 
+            this.pB_fixing.BackColor = System.Drawing.Color.White;
+            this.pB_fixing.Location = new System.Drawing.Point(3, 25);
+            this.pB_fixing.Name = "pB_fixing";
+            this.pB_fixing.Size = new System.Drawing.Size(52, 10);
+            this.pB_fixing.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pB_fixing);
+            this.panel1.Location = new System.Drawing.Point(315, 74);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(58, 38);
+            this.panel1.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 23);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Fixing";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // countdownTimer
+            // 
+            this.countdownTimer.Tick += new System.EventHandler(this.countdownTimer_Tick);
+            // 
+            // picLeft_Up
+            // 
+            this.picLeft_Up.BackColor = System.Drawing.Color.Transparent;
+            this.picLeft_Up.Image = global::Game02.Properties.Resources.lu;
+            this.picLeft_Up.Location = new System.Drawing.Point(55, 35);
+            this.picLeft_Up.Name = "picLeft_Up";
+            this.picLeft_Up.Size = new System.Drawing.Size(33, 33);
+            this.picLeft_Up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLeft_Up.TabIndex = 44;
+            this.picLeft_Up.TabStop = false;
+            this.picLeft_Up.Tag = "";
+            // 
             // lvl_e
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -149,6 +185,8 @@
             this.BackgroundImage = global::Game02.Properties.Resources.Frame_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picLeft_Up);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.HPbar);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.txtAmmo);
@@ -156,7 +194,6 @@
             this.Controls.Add(this.picBoat);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "lvl_e";
@@ -165,11 +202,12 @@
             this.Load += new System.EventHandler(this.lvl_e_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLeft_Up)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +215,6 @@
 
         #endregion
         private System.Windows.Forms.Timer GameTimer;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox picBoat;
@@ -185,5 +222,10 @@
         private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Label txtAmmo;
         private System.Windows.Forms.ProgressBar HPbar;
+        private System.Windows.Forms.ProgressBar pB_fixing;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer countdownTimer;
+        private System.Windows.Forms.PictureBox picLeft_Up;
     }
 }

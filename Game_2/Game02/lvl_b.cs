@@ -24,13 +24,15 @@ namespace Game02
         List<PictureBox> enList = new List<PictureBox>();
         Char player;
         Char p1 = new Char();
-        
-       
-        public lvl_b(int choice)
+        public static bool itemWoodTaken = false;
+        private int scoreFromPreviousLevel;
+
+        public lvl_b(int score, int choice)
         {
             InitializeComponent();
             SelectChar = choice;
             RestartGame();
+            scoreFromPreviousLevel = score;
 
         }
         private void lvl_b_Load(object sender, EventArgs e)
@@ -191,7 +193,7 @@ namespace Game02
                 this.Close();
             }
             txtAmmo.Text = "Ammo: " + ammo;
-            txtScore.Text = "Score:" + score;
+            txtScore.Text = "Score: " + (score + scoreFromPreviousLevel);
             playerMove();
             foreach(Control x in this.Controls)
             {
@@ -202,6 +204,14 @@ namespace Game02
                         this.Controls.Remove(x);
                         ((PictureBox)x).Dispose();
                         ammo += 5;
+                    }
+                }
+                if (x is PictureBox && (string)x.Tag == "tools")
+                {
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        picWood.Visible = false;
+                        itemWoodTaken = true;
                     }
                 }
                 if (x is PictureBox && (string)x.Tag == "block")

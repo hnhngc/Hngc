@@ -10,8 +10,9 @@ namespace Game02
         int playerHealth = 100;
         Char player;
         Char p1 = new Char();
-        bool right, left, up, down, gameOver;
+        bool right, left, up, down;
         private int scoreFromPreviousLevel;
+        public static bool itemHamTaken = false;
 
         public Cave(int score, int choice)
         {
@@ -91,6 +92,7 @@ namespace Game02
             {
                 if (!picHam.Visible) // Nếu picHam được lấy
                 {
+                    itemHamTaken = true;
                     lvl_c back = new lvl_c(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
                     this.Hide();
                     GameTimer.Stop();
@@ -101,7 +103,7 @@ namespace Game02
                 {
                     dialogBox1.Visible = true;
                     Timer dialogTimer = new Timer();
-                    dialogTimer.Interval = 2000; // 2000 milliseconds = 2 seconds
+                    dialogTimer.Interval = 1500; // 2000 milliseconds = 2 seconds
                     dialogTimer.Tick += (s, args) =>
                     {
                         dialogTimer.Stop();
@@ -117,15 +119,6 @@ namespace Game02
             if (playerHealth > 1)
             {
                 HPbar.Value = playerHealth;
-            }
-            else
-            {
-                gameOver = true;
-                GameTimer.Stop();
-                this.Hide();
-                GameOver go = new GameOver();
-                go.ShowDialog();
-                this.Close();
             }
             txtAmmo.Text = "Ammo: 10 ";
             txtScore.Text = "Score: " + (score + scoreFromPreviousLevel);

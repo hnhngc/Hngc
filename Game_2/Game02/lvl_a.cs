@@ -15,6 +15,8 @@ namespace Game02
         int SelectChar;
         Char player;
         Char p1 = new Char();
+        int score;
+        private int scoreFromPreviousLevel;
         public lvl_a(int choice)
         {
             InitializeComponent();
@@ -68,8 +70,7 @@ namespace Game02
             }
         }
 
-        private void lvl_a_FormClosed(object sender, FormClosedEventArgs e)
-        {}
+        
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
@@ -139,7 +140,7 @@ namespace Game02
             }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_d ls = new lvl_d(SelectChar);
+                lvl_d ls = new lvl_d(score + scoreFromPreviousLevel, SelectChar);
                 this.Hide();
                 timer1.Stop();
                 ls.ShowDialog();
@@ -147,7 +148,7 @@ namespace Game02
             }
             else if (a2.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_b us = new lvl_b(SelectChar);
+                lvl_b us = new lvl_b(score + scoreFromPreviousLevel, SelectChar);
                 this.Hide();
                 timer1.Stop();
                 us.ShowDialog();

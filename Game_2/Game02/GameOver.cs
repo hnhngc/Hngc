@@ -30,8 +30,6 @@ namespace Game02
             this.Hide();
             MainMenu mainMenu = new MainMenu();
             mainMenu.ShowDialog();
-            mainMenu.StartPosition = FormStartPosition.CenterParent;
-            mainMenu.BringToFront();
             this.Close();
         }
     }
