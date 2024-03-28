@@ -168,28 +168,28 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pic_Shelter1.Location" type="System.Drawing.Point, System.Drawing">
     <value>636, 151</value>
   </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pic_Shelter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 124</value>
   </data>
-  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="pic_Shelter1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="pic_Shelter1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
-    <value>pictureBox3</value>
+  <data name="&gt;&gt;pic_Shelter1.Name" xml:space="preserve">
+    <value>pic_Shelter1</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="picWood.Location" type="System.Drawing.Point, System.Drawing">
@@ -525,31 +525,31 @@
   <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pictureBox11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pic_Shelter2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox11.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pic_Shelter2.Location" type="System.Drawing.Point, System.Drawing">
     <value>-25, 163</value>
   </data>
-  <data name="pictureBox11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pic_Shelter2.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 124</value>
   </data>
-  <data name="pictureBox11.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="pic_Shelter2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="pictureBox11.TabIndex" type="System.Int32, mscorlib">
+  <data name="pic_Shelter2.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;pictureBox11.Name" xml:space="preserve">
-    <value>pictureBox11</value>
+  <data name="&gt;&gt;pic_Shelter2.Name" xml:space="preserve">
+    <value>pic_Shelter2</value>
   </data>
-  <data name="&gt;&gt;pictureBox11.Type" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox11.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pic_Shelter2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

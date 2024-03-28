@@ -14,10 +14,11 @@ namespace Game02
 {
     public partial class Scoreboard : Form
     {
-        public Scoreboard()
+        private string _username;
+        public Scoreboard(string username)
         {
             InitializeComponent();
-           
+            _username = username;
         }
 
         public string PlayerName { get; set; }
@@ -27,6 +28,28 @@ namespace Game02
         {
             PlayerName = playerName;
             ScoreValue = scoreValue;
+        }
+        public void UpdateTopPlayers(Dictionary<string, int> topPlayers)
+        {
+            if (topPlayers.Count != 3)
+            {
+                MessageBox.Show("Invalid number of top players!");
+                return;
+            }
+
+            lbl_1st.Text = topPlayers.ElementAt(0).Key;
+            lbl_S_1st.Text = $"Score: {topPlayers.ElementAt(0).Value}";
+
+            lbl_2nd.Text = topPlayers.ElementAt(1).Key;
+            lbl_S_2nd.Text = $"Score: {topPlayers.ElementAt(1).Value}";
+
+            lbl_3rd.Text = topPlayers.ElementAt(2).Key;
+            lbl_S_3rd.Text = $"Score: {topPlayers.ElementAt(2).Value}";
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

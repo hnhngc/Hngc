@@ -11,6 +11,7 @@ namespace Game02
 {
     public partial class lvl_e : Form
     {
+        private string _username;
         bool right, left, up, down, gameOver;
         string facing = "up";
         int playerHealth = 100;
@@ -25,9 +26,10 @@ namespace Game02
         private int countdownSeconds = 100;
         private bool isItemUnlocked = false;
 
-        public lvl_e(int score, int choice)
+        public lvl_e(int score, int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
             scoreFromPreviousLevel = score;
             RestartGame();
@@ -139,7 +141,7 @@ namespace Game02
             
             if (picPlayer.Bounds.IntersectsWith(picLeft_Up.Bounds))
             {
-                lvl_c topleft = new lvl_c(score + scoreFromPreviousLevel, SelectChar);
+                lvl_c topleft = new lvl_c(score + scoreFromPreviousLevel, SelectChar, _username);
                 this.Hide();
                 GameTimer.Stop();
                 topleft.ShowDialog();
@@ -288,7 +290,7 @@ namespace Game02
                     {
                         countdownTimer.Stop(); // Dừng timer khi đếm ngược kết thúc
                         isItemUnlocked = true;
-                        Win newlv = new Win();
+                        Win newlv = new Win(_username);
                         newlv.SetScore(score + scoreFromPreviousLevel);
                         this.Hide();
                         GameTimer.Stop();
@@ -372,7 +374,7 @@ namespace Game02
                 this.Controls.Remove(i);
             }
             enList.Clear();
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 3; i++)
             {
                 SpawnEnemy();
             }

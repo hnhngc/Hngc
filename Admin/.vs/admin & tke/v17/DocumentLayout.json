@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desktop_A\\Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|d:\\desktop_a\\admin\\admin \u0026 tke\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|solutionrelative:admin \u0026 tke\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|d:\\desktop_a\\admin\\admin \u0026 tke\\edit_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|solutionrelative:admin \u0026 tke\\edit_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|d:\\desktop_a\\admin\\admin \u0026 tke\\edit_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|solutionrelative:admin \u0026 tke\\edit_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|d:\\desktop_a\\admin\\admin \u0026 tke\\setting_game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2C8B5E6-85B1-4FB3-83AD-58A38E417926}|admin \u0026 tke\\admin \u0026 tke.csproj|solutionrelative:admin \u0026 tke\\setting_game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit_info.cs",
+              "DocumentMoniker": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Edit_info.cs",
+              "RelativeDocumentMoniker": "admin \u0026 tke\\Edit_info.cs",
+              "ToolTip": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Edit_info.cs",
+              "RelativeToolTip": "admin \u0026 tke\\Edit_info.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwCwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T09:43:19.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit_info.cs [Design]",
+              "DocumentMoniker": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Edit_info.cs",
+              "RelativeDocumentMoniker": "admin \u0026 tke\\Edit_info.cs",
+              "ToolTip": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Edit_info.cs [Design]",
+              "RelativeToolTip": "admin \u0026 tke\\Edit_info.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T09:43:09.372Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Setting_Game.cs [Design]",
+              "DocumentMoniker": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Setting_Game.cs",
+              "RelativeDocumentMoniker": "admin \u0026 tke\\Setting_Game.cs",
+              "ToolTip": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Setting_Game.cs [Design]",
+              "RelativeToolTip": "admin \u0026 tke\\Setting_Game.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T09:42:10.843Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Program.cs",
+              "RelativeDocumentMoniker": "admin \u0026 tke\\Program.cs",
+              "ToolTip": "D:\\Desktop_A\\Admin\\admin \u0026 tke\\Program.cs",
+              "RelativeToolTip": "admin \u0026 tke\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T09:25:41.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

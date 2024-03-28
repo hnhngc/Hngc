@@ -1,45 +1,85 @@
-﻿using WMPLib;
+﻿using System;
+using System.IO;
+using System.Media;
+using System.Reflection;
 
-namespace Game02
+public class SoundManager
 {
-    public class SoundManager
+    private static SoundManager instance;
+    private SoundPlayer player;
+    private bool isPlaying = false;
+
+    // Tên tệp âm thanh
+    private string audioFileName = "Chill.wav";
+
+    // Private constructor để ngăn việc khởi tạo từ bên ngoài
+    private SoundManager()
     {
-        private WindowsMediaPlayer player;
-        private int volume = 50; // Giá trị mặc định cho âm lượng
+        // Lấy đường dẫn thư mục của ứng dụng
+        string directoryPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-        // Khởi tạo player và đặt đường dẫn tệp âm thanh
-        public SoundManager(string filePath)
+        // Kết hợp đường dẫn của thư mục với tên tệp âm thanh
+        string filePath = Path.Combine(directoryPath, "Resources", audioFileName);
+
+        // Kiểm tra xem tệp âm thanh có tồn tại không
+        if (File.Exists(filePath))
         {
-            player = new WindowsMediaPlayer();
-            player.URL = filePath;
+            // Khởi tạo SoundPlayer với đường dẫn tệp âm thanh
+            player = new SoundPlayer(filePath);
         }
-
-        // Phát nhạc với chế độ lặp lại
-        public void PlayLoop()
+        else
         {
-            // Đặt chế độ lặp lại
-            player.settings.setMode("loop", true);
-            // Phát nhạc
-            player.controls.play();
+            throw new FileNotFoundException($"File {audioFileName} not found in the Resources directory.");
         }
+    }
 
-        // Dừng nhạc
-        public void Stop()
+    // Phương thức để lấy instance của SoundManager (singleton pattern)
+    public static SoundManager GetInstance()
+    {
+        if (instance == null)
         {
-            player.controls.stop();
+            instance = new SoundManager();
         }
+        return instance;
+    }
 
-        // Đặt âm lượng
-        public void SetVolume(int volume)
+    // Phương thức để phát âm thanh
+    public void Play()
+    {
+        player.PlayLooping();
+        isPlaying = true;
+    }
+
+    // Phương thức để tạm dừng âm thanh
+    public void Pause()
+    {
+        player.Stop();
+        isPlaying = false;
+    }
+
+    // Phương thức để dừng âm thanh
+    public void Stop()
+    {
+        player.Stop();
+        isPlaying = false;
+    }
+
+    // Phương thức để kiểm tra trạng thái phát của âm thanh
+    public bool IsPlaying()
+    {
+        return isPlaying;
+    }
+
+    // Phương thức để bật/tắt âm thanh
+    public void ToggleSound()
+    {
+        if (IsPlaying())
         {
-            this.volume = volume;
-            player.settings.volume = volume;
+            Pause();
         }
-
-        // Lấy âm lượng
-        public int GetVolume()
+        else
         {
-            return volume;
+            Play();
         }
     }
 }

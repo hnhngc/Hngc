@@ -13,10 +13,13 @@ namespace Game02
         bool right, left, up, down;
         private int scoreFromPreviousLevel;
         public static bool itemHamTaken = false;
+        private string _username;
+        private int _userID;
 
-        public Cave(int score, int choice)
+        public Cave(int score, int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
             scoreFromPreviousLevel = score;
         }
@@ -93,7 +96,7 @@ namespace Game02
                 if (!picHam.Visible) // Nếu picHam được lấy
                 {
                     itemHamTaken = true;
-                    lvl_c back = new lvl_c(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    lvl_c back = new lvl_c(score + scoreFromPreviousLevel, SelectChar, _username); // Cộng điểm từ level trước
                     this.Hide();
                     GameTimer.Stop();
                     back.ShowDialog();

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lvl_b));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pic_Shelter1 = new System.Windows.Forms.PictureBox();
             this.picWood = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.picPlayer = new System.Windows.Forms.PictureBox();
@@ -47,10 +47,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pic_Shelter2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Shelter1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -61,7 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Shelter2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -82,14 +82,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "block";
             // 
-            // pictureBox3
+            // pic_Shelter1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Game02.Properties.Resources._12121;
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "block";
+            this.pic_Shelter1.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Shelter1.Image = global::Game02.Properties.Resources._12121;
+            resources.ApplyResources(this.pic_Shelter1, "pic_Shelter1");
+            this.pic_Shelter1.Name = "pic_Shelter1";
+            this.pic_Shelter1.TabStop = false;
+            this.pic_Shelter1.Tag = "block";
             // 
             // picWood
             // 
@@ -205,14 +205,14 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "block";
             // 
-            // pictureBox11
+            // pic_Shelter2
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = global::Game02.Properties.Resources._12121;
-            resources.ApplyResources(this.pictureBox11, "pictureBox11");
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "block";
+            this.pic_Shelter2.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Shelter2.Image = global::Game02.Properties.Resources._12121;
+            resources.ApplyResources(this.pic_Shelter2, "pic_Shelter2");
+            this.pic_Shelter2.Name = "pic_Shelter2";
+            this.pic_Shelter2.TabStop = false;
+            this.pic_Shelter2.Tag = "block";
             // 
             // lvl_b
             // 
@@ -220,7 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Game02.Properties.Resources.Grass_Sample;
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pic_Shelter2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -231,7 +231,7 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.picWood);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pic_Shelter1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HPbar);
             this.Controls.Add(this.pictureBox9);
@@ -245,7 +245,7 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Shelter1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -256,7 +256,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Shelter2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +266,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pic_Shelter1;
         private System.Windows.Forms.PictureBox picWood;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox picPlayer;
@@ -281,6 +281,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pic_Shelter2;
     }
 }

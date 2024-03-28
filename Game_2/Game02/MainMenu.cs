@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Media;
 using System.Reflection;
 using System.Windows.Forms;
@@ -8,83 +11,110 @@ namespace Game02
 {
     public partial class MainMenu : Form
     {
-        private SoundPlayer soundPlayer;
+        
         private Options option;
-        private bool PlaySound;
+        private SoundManager soundManager;
+        private string _username;
 
-        public MainMenu()
+        public MainMenu(string username)
         {
             InitializeComponent();
+            _username = username;
+            lbl_Username.Text = _username;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Load += MainMenu_Load;
 
             // Khởi tạo đối tượng option
-            option = new Options();
+            option = new Options(_username);
+            soundManager = SoundManager.GetInstance();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            try
+            
+            // Kiểm tra trạng thái âm thanh từ Options và bắt đầu hoặc dừng phát âm thanh tương ứng
+            if (soundManager.IsPlaying())
             {
-                // Kiểm tra trạng thái của option.isPlaying
-                if (option.isPlaying)
+                soundManager.Play();
+            }
+            else
+            {
+                soundManager.Stop();
+            }
+        }
+        private void ShowScoreboard()
+        {
+            Scoreboard scoreboardForm = new Scoreboard(_username);
+
+            using (SqlConnection sqlConnection = admin___tke.Kết_nối.getConnection())
+            {
+                sqlConnection.Open();
+                using (SqlCommand command = new SqlCommand(
+                        "SELECT TOP 3 U.UserName, G.Score " +
+                        "FROM (" +
+                            "SELECT MAX(Score) as Score, UserID " +
+                            "FROM GameSessions " +
+                            "WHERE GameID = 2 " +
+                            "GROUP BY UserID " +
+                        ") G JOIN Users U ON G.UserID = U.UserID " +
+                        "ORDER BY G.Score DESC", sqlConnection))
                 {
-                    // Khởi tạo đối tượng SoundPlayer
-                    soundPlayer = new SoundPlayer();
+                    SqlDataReader reader = command.ExecuteReader();
 
-                    // Lấy đường dẫn thư mục của ứng dụng
-                    string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                    string filePath = Path.Combine(directory, "Chill.wav");
+                    Dictionary<string, int> topPlayers = new Dictionary<string, int>();
 
-                    // Kiểm tra xem tệp âm thanh có tồn tại không
-                    if (File.Exists(filePath))
+                    while (reader.Read())
                     {
-                        // Đặt đường dẫn âm thanh cho SoundPlayer và phát
-                        soundPlayer.SoundLocation = filePath;
-                        soundPlayer.Play();
+                        string playerName = reader["UserName"].ToString();
+                        int score = Convert.ToInt32(reader["Score"]);
+
+                        topPlayers.Add(playerName, score);
                     }
-                    else
-                    {
-                        MessageBox.Show("Không thể tìm thấy tệp âm thanh.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+
+                    scoreboardForm.UpdateTopPlayers(topPlayers);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi phát tệp âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            scoreboardForm.ShowDialog();
         }
 
         private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // Dừng phát âm thanh khi form đóng
-            soundPlayer?.Stop();
+            soundManager.Stop();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_Opt_Click(object sender, EventArgs e)
         {
-            Options optionsForm = new Options();
+            Options optionsForm = new Options(_username);
             optionsForm.Show();
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Start_Click(object sender, EventArgs e)
         {
-            CharSelect charSelectForm = new CharSelect();
+            CharSelect charSelectForm = new CharSelect(_username);
             this.Hide();
             charSelectForm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Score_Click(object sender, EventArgs e)
         {
-            Scoreboard sb = new Scoreboard();
-            this.Hide();
-            sb.Show();
+            ShowScoreboard();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MainMenu mainMn = Application.OpenForms.OfType<MainMenu>().FirstOrDefault();
+            if(mainMn != null)
+            {
+                mainMn.Hide();
+            }
+            this.Close();
+        }
+
+        private void lbl_Username_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

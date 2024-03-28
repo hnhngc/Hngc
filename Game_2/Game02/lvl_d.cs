@@ -20,10 +20,13 @@ namespace Game02
         Char p1 = new Char();
         private int scoreFromPreviousLevel;
         public static bool itemScrewTaken = false;
+        private string _username;
+        private int _userID;
 
-        public lvl_d(int score, int choice)
+        public lvl_d(int score, int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
             RestartGame();
             scoreFromPreviousLevel = score;
@@ -133,7 +136,7 @@ namespace Game02
                 if (!picScrew.Visible) // Nếu picHam được lấy
                 {
                     itemScrewTaken = true;
-                    lvl_b back = new lvl_b(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    lvl_b back = new lvl_b(score + scoreFromPreviousLevel, SelectChar, _username); // Cộng điểm từ level trước
                     this.Hide();
                     GameTimer.Stop();
                     back.ShowDialog();
@@ -157,7 +160,7 @@ namespace Game02
                 if (!picScrew.Visible) // Nếu picHam được lấy
                 {
                     itemScrewTaken = true;
-                    lvl_e back = new lvl_e(score + scoreFromPreviousLevel, SelectChar); // Cộng điểm từ level trước
+                    lvl_e back = new lvl_e(score + scoreFromPreviousLevel, SelectChar, _username); // Cộng điểm từ level trước
                     this.Hide();
                     GameTimer.Stop();
                     back.ShowDialog();
@@ -384,7 +387,7 @@ namespace Game02
                 this.Controls.Remove(i);
             }
             enemyList.Clear();
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 3; i++)
             {
                 SpawnEnemy();
             }

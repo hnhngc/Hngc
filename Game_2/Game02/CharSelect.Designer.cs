@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.PictureBox();
             this.picP1 = new System.Windows.Forms.PictureBox();
             this.picP2 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btn_Start = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_title)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picP1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picP2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // lbl_title
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Game02.Properties.Resources.Group_9;
-            this.pictureBox1.Location = new System.Drawing.Point(113, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(588, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.lbl_title.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_title.Image = global::Game02.Properties.Resources.Group_9;
+            this.lbl_title.Location = new System.Drawing.Point(113, 40);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(588, 116);
+            this.lbl_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lbl_title.TabIndex = 1;
+            this.lbl_title.TabStop = false;
             // 
             // picP1
             // 
@@ -72,23 +72,23 @@
             this.picP2.TabStop = false;
             this.picP2.Click += new System.EventHandler(this.picP2_Click);
             // 
-            // guna2Button1
+            // btn_Start
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.SeaShell;
-            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.SandyBrown;
-            this.guna2Button1.Location = new System.Drawing.Point(314, 309);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(174, 45);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "START";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_Start.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Start.BorderRadius = 10;
+            this.btn_Start.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Start.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Start.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Start.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Start.FillColor = System.Drawing.Color.SeaShell;
+            this.btn_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Start.ForeColor = System.Drawing.Color.SandyBrown;
+            this.btn_Start.Location = new System.Drawing.Point(314, 309);
+            this.btn_Start.Name = "btn_Start";
+            this.btn_Start.Size = new System.Drawing.Size(174, 45);
+            this.btn_Start.TabIndex = 4;
+            this.btn_Start.Text = "START";
+            this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
             // 
             // CharSelect
             // 
@@ -98,17 +98,17 @@
             this.BackgroundImage = global::Game02.Properties.Resources.Frame_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_Start);
             this.Controls.Add(this.picP2);
             this.Controls.Add(this.picP1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbl_title);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CharSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_title)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picP1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picP2)).EndInit();
             this.ResumeLayout(false);
@@ -118,9 +118,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox lbl_title;
         private System.Windows.Forms.PictureBox picP1;
         private System.Windows.Forms.PictureBox picP2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_Start;
     }
 }

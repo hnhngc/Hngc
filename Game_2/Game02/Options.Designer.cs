@@ -28,57 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_title = new System.Windows.Forms.PictureBox();
+            this.pic_Bg = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Sp = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Play = new Guna.UI2.WinForms.Guna2CircleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_title)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Bg)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Button2
+            // btn_Exit
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::Game02.Properties.Resources.Rectangle_22;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(740, 12);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(48, 45);
-            this.guna2Button2.TabIndex = 5;
-            this.guna2Button2.UseTransparentBackground = true;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btn_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.BorderRadius = 10;
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Image = global::Game02.Properties.Resources.Rectangle_22;
+            this.btn_Exit.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Exit.Location = new System.Drawing.Point(740, 12);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(48, 45);
+            this.btn_Exit.TabIndex = 5;
+            this.btn_Exit.UseTransparentBackground = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // pictureBox1
+            // lbl_title
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Game02.Properties.Resources.Group_8;
-            this.pictureBox1.Location = new System.Drawing.Point(111, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(588, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.lbl_title.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_title.Image = global::Game02.Properties.Resources.Group_8;
+            this.lbl_title.Location = new System.Drawing.Point(111, 63);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(588, 116);
+            this.lbl_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lbl_title.TabIndex = 7;
+            this.lbl_title.TabStop = false;
             // 
-            // pictureBox2
+            // pic_Bg
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Game02.Properties.Resources.Rectangle_24__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(102, 195);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(612, 232);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.pic_Bg.Image = global::Game02.Properties.Resources.Rectangle_24__1_;
+            this.pic_Bg.Location = new System.Drawing.Point(102, 195);
+            this.pic_Bg.Name = "pic_Bg";
+            this.pic_Bg.Size = new System.Drawing.Size(612, 232);
+            this.pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_Bg.TabIndex = 8;
+            this.pic_Bg.TabStop = false;
             // 
             // label1
             // 
@@ -90,22 +90,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "BGM";
             // 
-            // guna2Button3
+            // btn_Sp
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(241)))));
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(241)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Location = new System.Drawing.Point(289, 347);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(243, 45);
-            this.guna2Button3.TabIndex = 13;
-            this.guna2Button3.Text = "SUPPORT";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btn_Sp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(241)))));
+            this.btn_Sp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Sp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Sp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Sp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Sp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(234)))), ((int)(((byte)(241)))));
+            this.btn_Sp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btn_Sp.ForeColor = System.Drawing.Color.Black;
+            this.btn_Sp.Location = new System.Drawing.Point(289, 347);
+            this.btn_Sp.Name = "btn_Sp";
+            this.btn_Sp.Size = new System.Drawing.Size(243, 45);
+            this.btn_Sp.TabIndex = 13;
+            this.btn_Sp.Text = "SUPPORT";
+            this.btn_Sp.Click += new System.EventHandler(this.btn_Sp_Click);
             // 
             // btn_Play
             // 
@@ -132,19 +132,19 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_Play);
-            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.btn_Sp);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.pic_Bg);
+            this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.btn_Exit);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Options_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lbl_title)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Bg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,11 +152,11 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Button btn_Exit;
+        private System.Windows.Forms.PictureBox lbl_title;
+        private System.Windows.Forms.PictureBox pic_Bg;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btn_Sp;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Play;
     }
 }

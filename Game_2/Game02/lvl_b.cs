@@ -26,10 +26,13 @@ namespace Game02
         Char p1 = new Char();
         public static bool itemWoodTaken = false;
         private int scoreFromPreviousLevel;
+        private string _username;
+        private int _userID;
 
-        public lvl_b(int score, int choice)
+        public lvl_b(int score, int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
             RestartGame();
             scoreFromPreviousLevel = score;
@@ -169,7 +172,7 @@ namespace Game02
 
             if (nextLV.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_c newlv = new lvl_c(score, SelectChar);
+                lvl_c newlv = new lvl_c(score, SelectChar, _username);
                 this.Hide();
                 timer1.Stop();
                 newlv.ShowDialog();

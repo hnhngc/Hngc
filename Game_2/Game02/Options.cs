@@ -7,52 +7,58 @@ namespace Game02
 {
     public partial class Options : Form
     {
-        private SoundPlayer soundPlayer = new SoundPlayer();
-        public bool isPlaying = true;
-        
-        
-        public Options()
+        private string _username;
+        private SoundManager soundManager;
+
+        public Options(string username)
         {
             InitializeComponent();
+            _username = username;
+            soundManager = SoundManager.GetInstance();
+            UpdateButtonState();
         }
 
         private void Options_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MainMenu mn = new MainMenu();
+            MainMenu mn = new MainMenu(_username);
             mn.ShowDialog();
             this.Close();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btn_Sp_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Support support = new Support();
+            Support support = new Support(_username);
             support.ShowDialog();
             this.Close();
         }
 
         private void btn_Play_Click(object sender, EventArgs e)
         {
-            if (isPlaying)
+            // Bật hoặc tắt âm thanh
+            soundManager.ToggleSound();
+
+            // Cập nhật trạng thái của nút
+            UpdateButtonState();
+        }
+
+        private void UpdateButtonState()
+        {
+            // Cập nhật văn bản của nút dựa trên trạng thái hiện tại của âm thanh
+            if (soundManager.IsPlaying())
             {
-                soundPlayer.Stop();
-                btn_Play.Text = "Play";
+                btn_Play.Text = "Pause Sound";
             }
             else
             {
-                soundPlayer.Play();
-                btn_Play.Text = "Stop";
+                btn_Play.Text = "Play Sound";
             }
-
-            isPlaying = !isPlaying;
-            
         }
-
     }
 }

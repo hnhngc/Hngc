@@ -86,3 +86,146 @@ D:\Hngc\Game_2\Game02\obj\Debug\Game02.pdb
 D:\Hngc\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
 D:\Hngc\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
 D:\Hngc\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe.config
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\Game02.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Cave.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.MainMenu.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_c.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_d.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_e.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Options.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.CharSelect.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Scoreboard.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Support.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Pause.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.GameOver.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Win.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_a.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_b.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.Properties.Resources.resources
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CopyComplete
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\obj\Debug\Game02.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Documents\Tài liệu\ueh\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Cave.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.MainMenu.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_c.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_d.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_e.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Options.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.CharSelect.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Scoreboard.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Support.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Pause.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.GameOver.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Win.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_a.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_b.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CopyComplete
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A\Game_2\Game02\obj\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Game02.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Game02.pdb
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\admin & tke.exe
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\admin & tke.pdb
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\bin\Debug\admin & tke.exe.config
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Cave.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.MainMenu.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.lvl_c.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.lvl_d.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.lvl_e.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Options.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.CharSelect.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Scoreboard.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Support.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Pause.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.GameOver.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Win.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.lvl_a.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.lvl_b.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.csproj.CopyComplete
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.exe
+C:\Users\Admin\Downloads\Desktop_A4\Game_2\Game02\obj\Debug\Game02.pdb
+D:\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Desktop_A\Game_2\Game02\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe.config
+D:\Desktop_A\Game_2\Game02\bin\Debug\Game02.exe
+D:\Desktop_A\Game_2\Game02\bin\Debug\Game02.pdb
+D:\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe
+D:\Desktop_A\Game_2\Game02\bin\Debug\Guna.UI2.dll
+D:\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.pdb
+D:\Desktop_A\Game_2\Game02\bin\Debug\admin & tke.exe.config
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.AssemblyReference.cache
+D:\Desktop_A\Game_2\Game02\obj\Debug\Interop.MediaPlayer.dll
+D:\Desktop_A\Game_2\Game02\obj\Debug\Interop.WMPLib.dll
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.ResolveComReference.cache
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Cave.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.MainMenu.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_c.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_d.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_e.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Options.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.CharSelect.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Scoreboard.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Support.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Pause.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.GameOver.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Win.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_a.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.lvl_b.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.Properties.Resources.resources
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.GenerateResource.cache
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.CoreCompileInputs.cache
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.csproj.Up2Date
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.exe
+D:\Desktop_A\Game_2\Game02\obj\Debug\Game02.pdb
+D:\Desktop_A\Game_2\Game02\bin\Debug\Properties\Resources.resx
+D:\Desktop_A\Game_2\Game02\bin\Debug\Properties\Resources.Designer.cs
+D:\Desktop_A\Game_2\Game02\bin\Debug\Resources\Chill.wav

@@ -424,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="cave_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 12</value>
+    <value>24, 76</value>
   </data>
   <data name="cave_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 120</value>
@@ -532,7 +532,7 @@
     <value>NoControl</value>
   </data>
   <data name="dialogbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 62</value>
+    <value>84, 126</value>
   </data>
   <data name="dialogbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 27</value>

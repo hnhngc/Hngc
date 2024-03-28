@@ -186,11 +186,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -512,7 +514,9 @@
     <None Include="Resources\Group 1 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Chill.wav" />
+    <None Include="Resources\Chill.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 20.png" />
@@ -528,6 +532,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Chill.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Admin\admin &amp; tke\admin &amp; tke.csproj">
+      <Project>{c2c8b5e6-85b1-4fb3-83ad-58a38e417926}</Project>
+      <Name>admin &amp; tke</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

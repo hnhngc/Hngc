@@ -17,9 +17,12 @@ namespace Game02
         Char p1 = new Char();
         int score;
         private int scoreFromPreviousLevel;
-        public lvl_a(int choice)
+        private string _username;
+        private int _userID;
+        public lvl_a(int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
         }
 
@@ -140,20 +143,13 @@ namespace Game02
             }
             if (a1.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                lvl_d ls = new lvl_d(score + scoreFromPreviousLevel, SelectChar);
+                lvl_d ls = new lvl_d(score + scoreFromPreviousLevel, SelectChar, _username);
                 this.Hide();
                 timer1.Stop();
                 ls.ShowDialog();
                 this.Close();
             }
-            else if (a2.Bounds.IntersectsWith(picPlayer.Bounds))
-            {
-                lvl_b us = new lvl_b(score + scoreFromPreviousLevel, SelectChar);
-                this.Hide();
-                timer1.Stop();
-                us.ShowDialog();
-                this.Close();
-            }
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

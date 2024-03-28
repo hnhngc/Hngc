@@ -20,10 +20,13 @@ namespace Game02
         private Char player;
         private Char p1 = new Char();
         private int scoreFromPreviousLevel;
+        private string _username;
+        private int _userID;
 
-        public lvl_c(int score, int choice)
+        public lvl_c(int score, int choice, string username)
         {
             InitializeComponent();
+            _username = username;
             SelectChar = choice;
             scoreFromPreviousLevel = score;
             RestartGame();
@@ -94,7 +97,7 @@ namespace Game02
             }
             if (picCave.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                GoToNextLevel(new Cave(score+ scoreFromPreviousLevel, SelectChar));
+                GoToNextLevel(new Cave(score+ scoreFromPreviousLevel, SelectChar, _username));
             }
             if (cave_2.Bounds.IntersectsWith(picPlayer.Bounds))
             {
@@ -110,11 +113,11 @@ namespace Game02
             }
             if (picFinal.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                GoToNextLevel(new lvl_e(score+ scoreFromPreviousLevel, SelectChar));
+                GoToNextLevel(new lvl_e(score+ scoreFromPreviousLevel, SelectChar, _username));
             }
             if (picDown.Bounds.IntersectsWith(picPlayer.Bounds))
             {
-                GoToNextLevel(new lvl_b(score + scoreFromPreviousLevel, SelectChar));
+                GoToNextLevel(new lvl_b(score + scoreFromPreviousLevel, SelectChar, _username));
             }
         }
 

@@ -8,6 +8,8 @@ namespace Game02
 {
     internal static class Program
     {
+        private static string _username;
+        private static int _userID;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,13 @@ namespace Game02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            _username = GetUsernameFromUser();
+            Application.Run(new MainMenu(_username));
+        }
+        private static string GetUsernameFromUser()
+        {
+            Console.Write("Please enter your username: ");
+            return Console.ReadLine();
         }
     }
 }
